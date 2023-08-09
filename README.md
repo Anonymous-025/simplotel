@@ -1,7 +1,7 @@
 # Simplotel
 
-![Website Image](/public/uiPg1.png)
-![Website Image](/public/uiPg2.png)
+![Website Image](/public/desktopUI.png)
+![Website Image](/public/phoneUI.png)
 
 ## Figma File
 
@@ -22,4 +22,4 @@ This is the link for Figma file :
 5. The website **shouldn't break when zoomed in or zoomed out** or while shrinking the screen.
 6. The **text shouldn't overflow.**
 
-Goto heading :[simplotel](#simplotel 'Goto simplotel')
+Goto heading :[Simplotel](#Simplotel 'Goto Simplotel')
