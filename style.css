@@ -23,7 +23,6 @@ header {
 .links {
   width: 100vw;
   display: flex;
-
   justify-content: center;
 }
 
@@ -53,30 +52,28 @@ header {
   background-size: cover;
   background-position: center;
 }
-.loremIpsum {
-  font-family: sans-serif, Arial, Helvetica;
+.loremIpsumContainer {
   display: flex;
   flex-direction: column;
-  background-color: 1px solid red;
   justify-content: center;
   align-items: left;
-  font-size: 1.4rem;
   color: white;
   padding: 40px 32px;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   word-spacing: 2px;
   margin: 50px;
-  max-width: 32rem;
+  max-width: 34rem;
   max-height: 200px;
   background-color: rgba(248, 122, 122, 0.5);
 }
-.loremIpsum h2 {
+.loremIpsumContainer h2 {
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 2.7rem;
 }
 
-.loremIpsum p {
-  font-size: 1rem;
+.loremIpsumContainer p {
+  font-size: 16px;
 }
 
 /* Order Now */
@@ -87,7 +84,7 @@ header {
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 .orderContainer {
   margin-top: 20px;
@@ -97,8 +94,9 @@ header {
 }
 
 .container {
-  width: 25vw;
-  height: 60vh;
+  width: 250px;
+  margin: 20px;
+  height: 300px;
   border-radius: 0px 60px;
   background: #fff;
 }
@@ -142,4 +140,68 @@ section img {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+@media only screen and (max-width: 680px) {
+  header {
+    background-color: white;
+    width: 100%;
+    height: auto;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .links {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .link-child {
+    margin-bottom: 5px;
+  }
+
+  .icons {
+    display: flex;
+    align-items: center;
+  }
+  .img-margin {
+    margin: 0 5px 5px 5px;
+  }
+
+  /* Lorem Ipsum */
+
+  .bg {
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loremIpsumContainer {
+    padding: 5px;
+    color: white;
+    background-color: rgba(248, 122, 122, 0.5);
+  }
+  .loremIpsumContainer h2 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  .loremIpsumContainer p {
+    font-size: 1rem;
+  }
+
+  /* Order Now */
+  .orderContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
