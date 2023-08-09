@@ -1,12 +1,12 @@
-# simplotel
+# Simplotel
 
-![Website Image](/public/image.png)
+![Website Image](/public/uiPg1.png)
+![Website Image](/public/uiPg2.png)
 
 ## Figma File
 
-[Figma File](https://www.figma.com/proto/AnhK3grujgiwUC60aYlwD6/Simplotel?page-id=0%3A1&type=design&node-id=22-15&viewport=-310%2C410%2C0.27&t=3xfFbq8BnA7CB7wh-1&scaling=scale-down&mode=design/ 'UI Design')
-
-https://www.figma.com/proto/AnhK3grujgiwUC60aYlwD6/Simplotel?page-id=0%3A1&node-id=22-15&scaling=scale-down&mode=design&t=cWDwmHtEHr8ryHnx-1
+This is the link for Figma file :
+[Figma File](https://www.figma.com/proto/AnhK3grujgiwUC60aYlwD6/Simplotel?page-id=0%3A1&type=design&node-id=22-15&viewport=-734%2C287%2C0.34&t=h3iIlB1ruw31slPr-1&scaling=scale-down&mode=design 'UI Design')
 
 # Points to note while making website
 
@@ -22,4 +22,4 @@ https://www.figma.com/proto/AnhK3grujgiwUC60aYlwD6/Simplotel?page-id=0%3A1&node-
 5. The website **shouldn't break when zoomed in or zoomed out** or while shrinking the screen.
 6. The **text shouldn't overflow.**
 
-Markup: [heading-1](#heading-1 'Goto heading-1')
+Goto heading :[simplotel](#simplotel 'Goto simplotel')
