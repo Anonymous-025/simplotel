@@ -5,37 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Simplotel</title>
-    <link rel="shortcut icon" href="public/restaurant.png" />
+    <link rel="shortcut icon" href="/public/restaurant.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Header Nav Bar-->
     <header>
       <nav class="navbar">
-        <div>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Order</a></li>
-            <li><a href="#">Food</a></li>
-            <li><a href="#">Restaurant</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
+        <ul class="links">
+          <li class="link-child"><a href="#">Home</a></li>
+          <li class="link-child"><a href="#">Order</a></li>
+          <li class="link-child"><a href="#">Food</a></li>
+          <li class="link-child"><a href="#">Restaurant</a></li>
+          <li class="link-child"><a href="#">Testimonials</a></li>
+          <li class="link-child"><a href="#">Contact&nbsp;Us</a></li>
+        </ul>
         <div class="icons">
-          <div>
-            <img
-              src="public/iconPhone.png"
-              class="brand-logo"
-              alt="Contact Icon"
-            />
-          </div>
-          <div>
-            <img src="public/iconCart.png" class="brand-logo" alt="Cart Icon" />
-          </div>
+          <img
+            class="img-margin"
+            src="/public/icons8-phone-infographic-16.png"
+            alt="phone icon"
+          />
+          <img
+            class="img-margin"
+            src="/public/icons8-cart-16.png"
+            alt="cart icon"
+          />
         </div>
       </nav>
     </header>
-
+    <!-- Lorem Ipsum -->
     <section class="bg">
       <div class="loremIpsum">
         <div>
@@ -50,39 +49,44 @@
         </div>
       </div>
     </section>
-
-    <section class="orderNow">
-      <h2>Order Now</h2>
-      <div class="mainContainer">
-        <div class="divContainer">
-          <div class="imgContainer"><img src="public/img2.jpg" alt="" /></div>
-          <div class="txtContainer">
-            <h4>BURGER</h4>
-            <p>Lorem Ipsum has been the industry's standard dummy text</p>
+    <!-- Order Now -->
+    <section>
+      <h2 class="order-head">Order Now</h2>
+      <div class="orderContainer">
+        <div class="container">
+          <img src="/public/img2.jpg" alt="Burger Image" />
+          <div>
+            <h3 class="head-black">BURGER</h3>
+            <p class="para-center">
+              Lorem Ipsum has been the <br />
+              industry's standard dummy text
+            </p>
           </div>
         </div>
-        <div class="divContainer">
-          <div class="imgContainer"><img src="public/img3.jpg" alt="" /></div>
-          <div class="txtContainer">
-            <h4>PIZZA</h4>
-            <p>Lorem Ipsum has been the industry's standard dummy tex</p>
+        <div class="container">
+          <img src="/public/img3.jpg" alt="Burger Image" />
+          <div>
+            <h3 class="head-black">PIZZA</h3>
+            <p class="para-center">
+              Lorem Ipsum has been the <br />
+              industry's standard dummy text
+            </p>
           </div>
         </div>
-        <div class="divContainer">
-          <div class="imgContainer"><img src="public/img2.jpg" alt="" /></div>
-          <div class="txtContainer">
-            <h4>PASTA</h4>
-            <p>Lorem Ipsum has been the industry's standard dummy tex</p>
+        <div class="container">
+          <img src="/public/img4.jpg" alt="Burger Image" />
+          <div>
+            <h3 class="head-black">PASTA</h3>
+            <p class="para-center">
+              Lorem Ipsum has been the <br />
+              industry's standard dummy text
+            </p>
           </div>
         </div>
       </div>
-      <div class="centerOrder">
+      <div class="block-center">
         <a href="#">Order</a>
       </div>
     </section>
-
-    <footer>
-      <p>&copy; 2023 Anonymous-025. All rights reserved.</p>
-    </footer>
   </body>
 </html>
