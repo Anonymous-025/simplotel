@@ -167,6 +167,7 @@ section img {
   .icons {
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
   .img-margin {
     margin: 0 5px 5px 5px;
