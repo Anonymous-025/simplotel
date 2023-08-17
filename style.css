@@ -1,21 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: SansSerif;
-}
-
 body {
+  padding: 0;
+  margin: 0;
   background: linear-gradient(90deg, #ff69c1 0%, #ffd95e 100%);
 }
-/* header */
-header {
+
+nav {
   background-color: white;
   width: 100%;
   height: 50px;
-}
-.navbar {
-  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,49 +28,44 @@ header {
 }
 
 .icons {
+  cursor: pointer;
   display: flex;
   justify-content: end;
 }
 .img-margin {
   margin-right: 20px;
 }
+
 /* Lorem Ipsum */
 
 .bg {
-  background-image: url('/public/img1.jpg');
+  max-width: 100vw;
   height: 100svh;
-  display: flex;
-  align-items: center;
+  background: url('./public/img1.jpg');
   background-size: cover;
   background-position: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
-.loremIpsumContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-  color: white;
-  padding: 40px 32px;
-  letter-spacing: 1px;
-  word-spacing: 2px;
-  margin: 50px;
-  max-width: 34rem;
-  max-height: 200px;
-  background-color: rgba(248, 122, 122, 0.5);
+.loremContainer {
+  margin-left: 50px;
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
+  max-width: 550px;
+  padding: 20px;
+  background: rgba(235, 17, 17, 0.212);
+  color: #fff;
 }
-.loremIpsumContainer h2 {
-  margin-bottom: 20px;
+.loremIpsum {
   font-weight: 600;
-  font-size: 2.7rem;
+  font-size: 2rem;
 }
 
-.loremIpsumContainer p {
-  font-size: 16px;
-}
+/* Order */
 
-/* Order Now */
-.order-head {
-  margin-top: 20px;
+.order {
+  margin: 20px auto;
   text-align: center;
   color: #fff;
   font-size: 32px;
@@ -87,122 +74,93 @@ header {
   letter-spacing: 1px;
 }
 .orderContainer {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  justify-content: center;
+  column-gap: 10vw;
 }
-
 .container {
-  width: 250px;
-  margin: 20px;
-  height: 300px;
-  border-radius: 0px 60px;
-  background: #fff;
+  background-color: #fff;
+  border: 1px solid;
+  border-radius: 0 50px;
+  max-width: 250px;
+  max-height: 300px;
 }
-
-section img {
-  padding: 20px;
-  border-radius: 0px 60px 0px 0px;
-  width: 100%;
-  height: 60%;
+.container img {
+  border-radius: 0px 50px 0px 0px;
+  padding: 10px;
+  width: 230px;
+  max-height: 50%;
   object-fit: cover;
 }
-
-.head-black {
-  margin-top: 10px;
-  color: black;
-  text-align: center;
-}
-.para-center {
-  margin-top: 20px;
+.container h3 {
   text-align: center;
 }
 
-.block-center {
-  margin: 30px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container p {
+  margin: 20px 20px;
 }
-.block-center a {
-  text-decoration: none;
-  width: 150px;
-  height: 60px;
-  border-radius: 60px;
-  display: inline-block;
+
+#order {
+  margin: 50px 0;
+  text-align: center;
+}
+#order a {
+  border-radius: 30px;
   background: rgba(217, 217, 217, 0.5);
   color: black;
-  padding: 20px;
-  text-align: center;
-
-  font-size: 16px;
-  font-style: normal;
+  padding: 10px 20px;
+  font-size: 1rem;
   font-weight: 600;
-  line-height: normal;
+  text-decoration: none;
 }
 
-@media only screen and (max-width: 680px) {
-  header {
-    background-color: white;
-    width: 100%;
-    height: auto;
+@media screen and (max-width: 980px) {
+  .orderContainer {
+    grid-template-columns: 250px 250px;
   }
-  .navbar {
-    display: flex;
+  .container {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  nav {
+    max-width: 100vw;
     flex-direction: column;
-    align-items: center;
+    height: auto;
     justify-content: center;
   }
   .links {
-    width: 100vw;
-    display: flex;
+    width: auto;
     flex-direction: column;
     align-items: center;
   }
   .link-child {
-    margin-bottom: 5px;
+    margin: 5px;
   }
-
   .icons {
-    display: flex;
+    margin: 0 0 10px 30px;
     align-items: center;
-    cursor: pointer;
+    justify-content: space-between;
   }
   .img-margin {
-    margin: 0 5px 5px 5px;
+    margin: 0 10px;
   }
 
-  /* Lorem Ipsum */
+  .loremContainer {
+    margin: 10px;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
+}
 
-  .bg {
-    height: 100%;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .loremIpsumContainer {
-    padding: 5px;
-    color: white;
-    background-color: rgba(248, 122, 122, 0.5);
-  }
-  .loremIpsumContainer h2 {
-    margin-bottom: 10px;
-    font-weight: 600;
-    font-size: 2rem;
-  }
-
-  .loremIpsumContainer p {
-    font-size: 1rem;
-  }
-
-  /* Order Now */
+@media screen and (max-width: 580px) {
   .orderContainer {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: 250px;
+  }
+  .container {
+    margin-bottom: 20px;
   }
 }
