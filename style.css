@@ -110,12 +110,13 @@ section img {
 }
 
 .head-black {
-  margin-top: 10px;
+  margin-top: auto;
   color: black;
   text-align: center;
 }
 .para-center {
-  margin-top: 20px;
+  margin-top: 10px;
+  padding: auto;
   text-align: center;
 }
 
